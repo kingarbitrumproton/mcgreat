@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$McGREAT Token</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Righteous', sans-serif;
+            background-color: #041E42;
+            color: white;
+        }
+
+        .hero {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #041E42, #BF0D3E);
+        }
+
+        .token-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 120px;
+            color: white;
+            margin: 20px 0;
+            text-shadow: 3px 3px 0 #BF0D3E;
+        }
+
+        .slogan {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .contract-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1 class="token-name">$McGREAT</h1>
+        <h2 class="slogan">Make Crypto Great Again!</h2>
+        <div class="contract-box">
+            Contract: 0x1234...ABCD
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    /* Add these styles to the existing style section */
+    .launch-button {
+        background: #BF0D3E;
+        color: white;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 50px;
+        font-size: 24px;
+        font-family: 'Bebas Neue', cursive;
+        cursor: pointer;
+        margin-top: 30px;
+        transition: transform 0.3s;
+    }
+
+    .launch-button:hover {
+        transform: scale(1.05);
+    }
+
+    .tokenomics {
+        padding: 80px 20px;
+        background: white;
+    }
+
+    .tokenomics h2 {
+        color: #041E42;
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .tokenomics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .tokenomics-item {
+        background: linear-gradient(45deg, #041E42, #BF0D3E);
+        padding: 30px;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .tokenomics-item:hover {
+        transform: translateY(-10px);
+    }
+
+    .tokenomics-item h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .tokenomics-item p {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .pump-fun-specs {
+        background: rgba(255,255,255,0.1);
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+</style>
+
+<!-- Add this after the hero div -->
+<div class="tokenomics">
+    <h2>TOKENOMICS</h2>
+    <div class="tokenomics-grid">
+        <div class="tokenomics-item">
+            <h3>Total Supply</h3>
+            <p>100,000,000</p>
+            <div class="pump-fun-specs">
+                Standard Pump.Fun Supply
+            </div>
+        </div>
+        <div class="tokenomics-item">
+            <h3>Tax Structure</h3>
+            <p>5% Buy / 5% Sell</p>
+            <div class="pump-fun-specs">
+                Platform Standard Tax
+            </div>
+        </div>
+        <div class="tokenomics-item">
+            <h3>Initial Liquidity</h3>
+            <p>90% Locked</p>
+            <div class="pump-fun-specs">
+                Secured by Pump.Fun
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Add these roadmap styles */
+    .roadmap {
+        background: linear-gradient(45deg, #041E42, #BF0D3E);
+        padding: 80px 20px;
+        position: relative;
+    }
+
+    .roadmap::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background: linear-gradient(90deg, 
+            #BF0D3E 33%, 
+            white 33%, white 66%, 
+            #041E42 66%);
+    }
+
+    .roadmap h2 {
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        margin-bottom: 50px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .roadmap-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .roadmap-item {
+        background: rgba(255, 255, 255, 0.95);
+        margin: 30px 0;
+        padding: 30px;
+        border-radius: 15px;
+        position: relative;
+        transition: transform 0.3s;
+    }
+
+    .roadmap-item:nth-child(1) {
+        border-left: 8px solid #BF0D3E;
+    }
+
+    .roadmap-item:nth-child(2) {
+        border-left: 8px solid white;
+    }
+
+    .roadmap-item:nth-child(3) {
+        border-left: 8px solid #041E42;
+    }
+
+    .roadmap-item:hover {
+        transform: translateX(15px);
+    }
+
+    .roadmap-item h3 {
+        color: #041E42;
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .roadmap-item p {
+        color: #333;
+        font-size: 18px;
+        margin: 10px 0;
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .roadmap-item p::before {
+        content: '★';
+        position: absolute;
+        left: 0;
+        color: #BF0D3E;
+    }
+</style>
+
+<!-- Add this after the tokenomics section -->
+<div class="roadmap">
+    <h2>PATRIOT'S ROADMAP</h2>
+    <div class="roadmap-container">
+        <div class="roadmap-item">
+            <h3>Phase 1: The Rally 🚀</h3>
+            <p>Launch on Pump.Fun Platform</p>
+            <p>Initial Marketing Blast</p>
+            <p>Telegram Community Building</p>
+            <p>First 1,000 Patriots Onboard</p>
+        </div>
+
+        <div class="roadmap-item">
+            <h3>Phase 2: The Movement 🌟</h3>
+            <p>Trending on Pump.Fun</p>
+            <p>Viral Meme Campaign</p>
+            <p>Patriot NFT Collection</p>
+            <p>Community Growth to 5,000</p>
+        </div>
+
+        <div class="roadmap-item">
+            <h3>Phase 3: The Victory 🏆</h3>
+            <p>Major Influencer Partnerships</p>
+            <p>Election Season Marketing</p>
+            <p>Victory Celebration Events</p>
+            <p>Future Development Voting</p>
+        </div>
+    </div>
+</div>
+<style>
+    /* Add these footer and final touch styles */
+    footer {
+        background: #041E42;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .social-button {
+        background: #BF0D3E;
+        color: white;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 25px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 20px;
+        transition: transform 0.3s;
+        border: 2px solid transparent;
+    }
+
+    .social-button:hover {
+        transform: translateY(-5px);
+        border-color: white;
+    }
+
+    .footer-slogan {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    /* Additional animations and effects */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    .token-name {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .token-name {
+            font-size: 80px;
+        }
+
+        .slogan {
+            font-size: 30px;
+        }
+
+        .social-links {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .roadmap-item {
+            margin: 20px 10px;
+        }
+    }
+</style>
+
+<!-- Add this at the end of the body -->
+<footer>
+    <div class="social-links">
+        <a href="#" class="social-button">Telegram</a>
+        <a href="#" class="social-button">Twitter</a>
+        <a href="https://pump.fun" class="social-button">Pump.Fun</a>
+    </div>
+    <p class="footer-slogan">$McGREAT - The People's Token</p>
+</footer>
+
+<!-- Add this script before closing body tag -->
+<script>
+    // Copy contract address functionality
+    function copyContract() {
+        const contractAddress = "0x1234...ABCD";
+        navigator.clipboard.writeText(contractAddress);
+        alert("Contract address copied to clipboard!");
+    }
+
+    // Add click event to contract box
+    document.querySelector('.contract-box').addEventListener('click', copyContract);
+</script>
+</body>
+</html>
